@@ -14,6 +14,10 @@ body {
 
 .menu{
   background-color: #b48caae6;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  margin-top: 0em;
 }
 
 a{
@@ -26,8 +30,8 @@ a{
 .menu ul{
   display: flex;
   justify-content: center;
-  text-align: center;
-  }
+  text-align: center; 
+ }
 
 .menu li{
   list-style: none;
@@ -67,4 +71,27 @@ a:hover{
   font-size: 15px;
 }
 
+#atuacao {
+  background-color: rgba(212, 108, 108, 0.8);
+  margin-top: 470px;
+  margin-bottom: 0px;
+  padding: 10px;
+  font-family: 'Jost', sans-serif;
+  font-size: 25px;
+  border: 1px solid black;
+  width: fit-content;
+  }
+
+  #clientes {
+    background-color: rgba(212, 108, 108, 0.8);
+    margin-top: -186px;
+    bottom: 0;
+    padding: 10px;
+    font-family: 'Jost', sans-serif;
+    text-align: right;
+    font-size: 25px;
+    border: 1px solid black;
+    width: 50%;
+    margin-left: 50%;
+    }
 
