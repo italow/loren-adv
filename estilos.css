@@ -5,7 +5,7 @@
 }
 
 body {
-  background-image: url("./adv2.jpg");
+  background-image: url("/adv2.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
