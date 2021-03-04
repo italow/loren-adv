@@ -1,42 +1,159 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>Advocacia Loren Dias</title>
-    <link href="https://fonts.googleapis.com/css2?family=Niconne&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="C:\Users\itsilva\Documents\imersao-css\estilos.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+ 
+  <title>Loren Dias Advocacia</title>
 </head>
 <body>
     <header>
-      <nav class="menu">
-       <ul>
-         <li><a href="#home">HOME</a></li>
-         <li><a href="#atuacao">ATUAÇÃO</a></li>
-         <li><a href="#clientes">CLIENTES</a></li>
-         <li><a href="#contato">CONTATO</a></li>
-        </ul>
-      </nav>
-    </header> 
-     <h1 class="site-title">Loren Dias</h1>
-     <h2 class="site-subtitle">Advogada</h2>
-     <h2 class="oab">OAB/SP:</h2>
-  <section id="atuacao">
-    <h1>Áreas de Atuação</h1>
-    <ul>
-      <li>Trabalhista</li>
-      <li>Civil (Família, Contratos, Indenizações, Sucessões)</li>
-      <li>Consumidor</li>
-    </ul>
-  </section>
-  <section id="clientes">
-    <h1>Clientes</h1>
-    <ul>
-      <li>Padovani</li>
-      <li>Supermercado São Vicente</li>
-      <li>Presidiários</li>
-    </ul>
-  </section>
-  
+      <div class="header-container">
+        <a href="index.html">
+          <img class="logo-header" src="./images/LD.png" alt="Logomarca Loren Dias Advocacia">
+        </a> 
+        <nav class="nav-menu">   
+          <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#atuacao">Atuação</a></li>
+            <li><a href="#clientes">Clientes</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="banner-home">      
+    </section> 
+
+    <section class="sobre" id="sobre">
+      <div class="sobre-flex container">
+        <div class="descricao-sobre">
+          <h1>Sobre nós</h1>
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <div class="botao-contato"><a href="#contato"><button>Entre em contato!</button></a>
+            </div>
+        </div>
+        
+        <div class="imagem-sobre">
+          <img src="./images/Design sem nome.jpg" alt="Martelo de Juiz">
+        </div>
+      </div>
+    </section>
+
+    <section class="atuacao container" id="atuacao">
+      <h1>Atuação</h1>
+      <div class="areas-atuacao">
+        <div class="previdenciario">
+          <h2>Direito Previdenciário</h2>
+          <ul>
+            <li><img src="./images/balanca-justica.svg" alt="Balança justiça">Lorem ipsum dolor sit amet,</li>
+            <li><img src="./images/balanca-justica.svg" alt="Balança justiça">Lorem ipsum dolor sit amet,</li>
+            <li><img src="./images/balanca-justica.svg" alt="Balança justiça">Lorem ipsum dolor sit amet,</li>
+          </ul><hr class="linha-horizontal">
+        </div><hr class="linha-vertical">
+        <div class="civil">
+          <h2>Direito Civil</h2>
+          <ul>
+            <li><img src="./images/balanca-justica.svg" alt="Balança justiça">Lorem ipsum dolor sit amet,</li>
+            <li><img src="./images/balanca-justica.svg" alt="Balança justiça">Lorem ipsum dolor sit amet,</li>
+            <li><img src="./images/balanca-justica.svg" alt="Balança justiça">Lorem ipsum dolor sit amet,</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="contato " id="contato">
+      <h1>Contato</h1>
+      <div class="container">
+        <div class="formulario">
+          <form action="http://formmail.kinghost.net/formmail.cgi" method="POST"> 
+            <input type="hidden" name="recipient" value="testeiseuemail@gmail.com"> <!-- Pode ser qualquer endereço de email -->
+            <input type="hidden" name="redirect" value="http://seudominio"> <!-- Após o envio, o usuário será redirecionado para a página configurada aqui -->
+            <input type="hidden" name="subject" value="teste de assunto">  <!-- Assunto da mensagem -->
+            <input type="hidden" name="email" value="email@doseudominio">   <!-- Deve ser uma conta de email ativa em seu domínio -->
+            
+            <p> 
+            Nome:<br /> 
+            <input type="text" size="30" name="nome"> 
+            </p>   
+            
+            <p>
+            E-mail:<br /> 
+            <input type="text" size="30" name="replyto"> 
+            </p>   
+
+            <p>
+            Telefone:<br /> 
+            <input type="tel" size="30" name="phone" placeholder="00 00000-0000"> 
+            </p> 
+            
+            <p> 
+            Sua mensagem:<br /> 
+            <textarea name="mensagem" id="mensagem"  placeholder="Insira aqui sua mensagem."></textarea>
+            </p>   
+            
+            <p> 
+            <input type="submit" name="BTEnvia" value="Enviar"> 
+            <input type="reset" name="BTApaga" value="Apagar"> </p> 
+            </form>
+        </div>
+        <div class="infos">
+          <div class="contate-nos">
+            <p>Sinta-se à vontade para nos contatar e realizar consultas e orçamentos!</p>
+            <br>
+            <p>Siga-nos nas redes sociais para ficar por dentro das novidades: </p>
+          </div>
+          <div class="redes">  
+            <a href="https://www.facebook.com" target="_blank"><img src="./images/facebook.svg" alt="Icone do Facebook"><strong>Visite nosso Facebook</strong></a>
+            <a href="https://www.linkedin.com" target="_blank"><img src="./images/linkedin.svg" alt="Icone do Linkedin"><strong>Seja nosso contato no Linkedin</strong></a>
+          </div>        
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-flex container">
+        <div class="footer-links">
+          <h2>Links úteis</h2>
+          <ul>
+            <a href="https://www.tjsp.jus.br" target="_blank">
+            <li><img src="./images/balanca-justica.svg" alt="Balança justiça">Tribunal de Justiça de São Paulo</li>
+            </a>
+            <a href="https://www.mpsp.mp.br" target="_blank">
+              <li><img src="./images/balanca-justica.svg" alt="Balança justiça">Ministério Público de São Paulo</li>
+            </a>
+            <a href="https://www.sap.sp.gov.br" target="_blank">
+              <li><img src="./images/balanca-justica.svg" alt="Balança justiça">Secretaria da Administração Penitenciária</li>
+            </a>
+          </ul>
+        </div>
+        <div class="footer-logo">  
+          <a href="index.html">
+            <img class="logo-header" src="./images/LD.png" alt="Logomarca Loren Dias Advocacia">
+          </a> 
+        </div>
+        <div class="footer-dados">
+          <div class="endereco">
+            <p><img src="./images/home.svg" alt="Icone de casa">Rua dos Andradas, 504 - Centro</p>
+            <p><img src="./images/placeholder.svg" alt="Apontador de mapa">Itu/SP</p>
+          </div>
+          <div class="telefone">
+            <p><img src="./images/phone.svg" alt="Icone de telefone">11 3333-3333</p>
+            <p><img src="./images/whatsapp.svg" alt="Icone do whatsapp">11 99999-9999</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
